@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeMethod;
 public class JsonPlaceHolderBaseUrl {
 
     protected RequestSpecification spec;
+    protected RequestSpecification spec1;
 
     @BeforeMethod
     public void setSpec() {

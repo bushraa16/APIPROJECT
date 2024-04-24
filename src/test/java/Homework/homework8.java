@@ -1,7 +1,6 @@
 package Homework;
 
-import base_urls.homework7Baseurl;
-import io.restassured.http.ContentType;
+import base_urls.homework9Baseurl;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
@@ -11,7 +10,7 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-public class homework8 extends homework7Baseurl {
+public class homework8 extends homework9Baseurl {
      /*
         Given
             1) https://reqres.in/api/users

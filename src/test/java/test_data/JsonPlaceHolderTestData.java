@@ -13,7 +13,6 @@ public class JsonPlaceHolderTestData {
         expectedData.put("userId", userId);
         expectedData.put("title", title);
         expectedData.put("completed", completed);
-
         return expectedData;
 
     }

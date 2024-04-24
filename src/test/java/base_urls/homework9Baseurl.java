@@ -5,14 +5,16 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.BeforeMethod;
 
-public class homework7Baseurl {
+public class homework9Baseurl {
     protected RequestSpecification spec;
+
 
     @BeforeMethod
     public void setSpec() {
         spec = new RequestSpecBuilder()
-                .setBaseUri("https://reqres.in/api/users")
+                .setBaseUri("https://petstore.swagger.io")
                 .setContentType(ContentType.JSON)
                 .build();
+
 
     }}

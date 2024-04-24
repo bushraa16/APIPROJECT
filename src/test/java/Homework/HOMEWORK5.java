@@ -29,7 +29,8 @@ public class HOMEWORK5 {
                 .statusCode(404)
                 .statusLine("HTTP/1.1 404 Not Found")
                // .header("Server", equalTo("cloudflare"));
-                   .header("Server","cloudflare");
+                   .header("Server","cloudflare")
+                .body(equalTo("{}"));
 
     }
 }
