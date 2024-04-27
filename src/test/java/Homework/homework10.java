@@ -21,7 +21,4 @@ public class homework10 extends homework9Baseurl {
         int availablePetsCount = response.jsonPath().getList("").size();
        // Assert.assertTrue("There are not more than 100 available pets.", availablePetsCount > 100);
         Assert.assertTrue(availablePetsCount > 100,"Expected more than 100 available pets, but found: " + availablePetsCount);
-
-
-
     }}
