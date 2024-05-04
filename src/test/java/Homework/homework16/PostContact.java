@@ -1,18 +1,14 @@
 package Homework.homework16;
-import base_urls.contactTokenBaseUrl;
 import base_urls.userTokenBaseUrl;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
-import pojos.BookingPojo;
-import pojos.UserInformationPojo;
 import utilities.ObjectMapperUtils;
 
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
 import static org.testng.Assert.assertEquals;
-import static utilities.ObjectMapperUtils.convertJsonToJava;
+
 public class PostContact extends userTokenBaseUrl {
     /*
   Given

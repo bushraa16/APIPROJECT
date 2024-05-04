@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/Bashair/IdeaProjects/APIPROJECT/src/test/java/Homework/homework15">
+        <classes>
+            <class name="Homework.homework15.AddUser"></class>
+            <class name="Homework.homework16.PostContact"></class>
+            <class name="Homework.homework16.getContact"></class>
+            <class name="Homework.homework16.updateContact"></class>
+            <class name="Homework.homework16.deleteContact"></class>
+            <class name="Homework.homework15.getUser"></class>
+            <class name="Homework.homework15.PutchUser"></class>
+            <class name="Homework.homework15.deletUser"></class>
+
+        </classes>
+    </test>
+</suite>
