@@ -1,6 +1,6 @@
 package Homework;
 
-import base_urls.homework9Baseurl;
+import base_urls.UserBaseurl;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
 
-public class homework10 extends homework9Baseurl {
+public class homework10 extends UserBaseurl {
     //Using the https://petstore.swagger.io/ document,
     // write an automation test that finds the number of "pets" with the status "available" and asserts that there are more than 100.
     @Test

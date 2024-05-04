@@ -1,6 +1,6 @@
 package Homework;
 
-import base_urls.homework9Baseurl;
+import base_urls.UserBaseurl;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-public class homework7  extends homework9Baseurl {
+public class homework7  extends UserBaseurl {
     /*
        Given
               https://reqres.in/api/unknown/

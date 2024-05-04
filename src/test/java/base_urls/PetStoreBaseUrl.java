@@ -5,7 +5,7 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.BeforeMethod;
 
-public class JsonPlaceHolderBaseUrl {
+public class PetStoreBaseUrl {
 
     protected RequestSpecification spec;
 
@@ -13,7 +13,7 @@ public class JsonPlaceHolderBaseUrl {
     public void setSpec() {
 
         spec = new RequestSpecBuilder()
-                .setBaseUri("https://jsonplaceholder.typicode.com")
+                .setBaseUri("https://petstore.swagger.io/v2")
                 .setContentType(ContentType.JSON)
                 .build();
 

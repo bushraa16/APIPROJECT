@@ -5,7 +5,7 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.BeforeMethod;
 
-public class homework9Baseurl {
+public class UserBaseurl {
     protected RequestSpecification spec;
 
 

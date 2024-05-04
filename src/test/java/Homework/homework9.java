@@ -1,5 +1,5 @@
 package Homework;
-import base_urls.homework9Baseurl;
+import base_urls.UserBaseurl;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
@@ -10,7 +10,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
 
-public class homework9 extends homework9Baseurl {
+public class homework9 extends UserBaseurl {
     /*
 Write an automation test that will create a 'user' using the "https://petstore.swagger.io/" document
 */

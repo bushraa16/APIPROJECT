@@ -1,51 +1,40 @@
 package pojos;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.util.ArrayList;
 import java.util.Arrays;
-
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class homework12pojo {
     private Integer id;
     private categoryDatepojo categoryDatepojo;
     private String name;
     private ArrayList photoUrls;
     private tagspojo tagsDatapojo;
-    private String stateurl;
+    private String status;
 
-    @Override
-    public String toString() {
-        return "homework12pojo{" +
-                "id=" + id +
-                ", categoryDatepojo=" + categoryDatepojo +
-                ", name='" + name + '\'' +
-                ", photoUrls=" + photoUrls +
-                ", tagsDatapojo=" + tagsDatapojo +
-                ", stateurl='" + stateurl + '\'' +
-                '}';
-    }
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public homework12pojo(Integer id, pojos.categoryDatepojo categoryDatepojo, String name, ArrayList photoUrls, tagspojo tagsDatapojo, String stateurl) {
-        this.id = id;
+    public homework12pojo(Integer id,pojos.categoryDatepojo categoryDatepojo, String name, ArrayList photoUrls,pojos.tagspojo tagsDatapojo, String status) {
+        this.id=id;
         this.categoryDatepojo = categoryDatepojo;
         this.name = name;
         this.photoUrls = photoUrls;
         this.tagsDatapojo = tagsDatapojo;
-        this.stateurl = stateurl;
+        this.status = status;
     }
-
+    public Integer getId() {
+        return id;
+    }
+    public void setId(Integer id) {
+        this.id = id;
+    }
     public pojos.categoryDatepojo getCategoryDatepojo() {
         return categoryDatepojo;
     }
-
     public void setCategoryDatepojo(pojos.categoryDatepojo categoryDatepojo) {
         this.categoryDatepojo = categoryDatepojo;
+    }
+    public homework12pojo() {
     }
 
     public String getName() {
@@ -72,11 +61,27 @@ public class homework12pojo {
         this.tagsDatapojo = tagsDatapojo;
     }
 
-    public String getStateurl() {
-        return stateurl;
+    public String getstatus() {
+        return status;
     }
 
-    public void setStateurl(String stateurl) {
-        this.stateurl = stateurl;
+    public void setstatus(String status) {
+        this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return "homework12pojo{" +
+                ",id="+id+
+                ", categoryDatepojo=" + categoryDatepojo +
+                ", name='" + name + '\'' +
+                ", photoUrls=" + photoUrls +
+                ", tagsDatapojo=" + tagsDatapojo +
+                ", status='" + status + '\'' +
+                '}';
+    }
+
 }
+
+
+

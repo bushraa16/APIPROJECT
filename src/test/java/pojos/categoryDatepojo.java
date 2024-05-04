@@ -2,22 +2,12 @@ package pojos;
 
 public class categoryDatepojo {
     private Integer id;
+    private String name;
 
-    public categoryDatepojo(Integer id, String cat) {
+    public categoryDatepojo(Integer id, String name) {
         this.id = id;
-        this.cat = cat;
+        this.name = name;
     }
-
-    private String cat;
-
-    @Override
-    public String toString() {
-        return "categoryDatepojo{" +
-                "id=" + id +
-                ", cat='" + cat + '\'' +
-                '}';
-    }
-
     public Integer getId() {
         return id;
     }
@@ -26,11 +16,19 @@ public class categoryDatepojo {
         this.id = id;
     }
 
-    public String getCat() {
-        return cat;
+    public String getName() {
+        return name;
     }
 
-    public void setCat(String cat) {
-        this.cat = cat;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "categoryDatepojo{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }
