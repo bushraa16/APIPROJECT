@@ -51,7 +51,7 @@ public class AddUser extends userTokenBaseUrl {
                 {
                              "firstName": "bushraa",
                              "lastName": "alharbi",
-                             "email": "bushraalharbitester@hotmail.com",
+                             "email": "bushraalhadsrbitester@hotmail.com",
                              "password":"Aa1234567"
                   
                          }
